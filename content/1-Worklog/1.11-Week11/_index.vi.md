@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 11"
 date: 2024-01-01
-weight: 2
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 11:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Triển khai bộ quy tắc xác thực toán học tự kiểm lỗi sai.
+- Phát triển bộ điểm tin cậy nhằm cảnh báo nhân sự kiểm tra lại (Human-in-the-loop).
+- Giấu kín Key cấu hình và biến môi trường quan trọng bằng AWS Secrets Manager.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc |
+| --- | --- |
+| 2 | - Xây hàm 'Math Validation' tự động: Tổng tiền bắt buộc = (Đơn giá x Số lượng) + Thuế. <br> - Đưa ra quy định ứng phó nếu thuật toán AI đọc sai một con số làm lệch phép tính. |
+| 3 | - Thang đo điểm tin cậy (Confidence Score): Thuật toán phải tự phản hồi xem nó tự tin bao nhiêu % với con số vừa trích xuất. <br> - Trả về mã màu cảnh báo (Blue/Yellow/Red) để user dễ dòm lỗi. |
+| 4 | - Thanh tra toàn bộ file codebase: Quét và loại bỏ sạch LLM API Keys hoặc Password CSDL vô tình code cứng dưới dạng String. |
+| 5 | - Học cách sử dụng AWS Systems Manager Parameter Store và AWS Secrets Manager. <br> - Upload các token, key bảo mật tuyệt đối vô két sắt của AWS Secrets Manager. |
+| 6 | - **Thực hành:** <br>&emsp; + Chỉnh sửa ECS Task Definition để tự móc nối mật khẩu từ ARN Cloud lúc mới boot lên thay vì lấy qua biến file text <br>&emsp; + Đảm bảo app vẫn chạy siêu nuột nà dù source code không hề lộ khóa. |
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Đưa khả năng chống chịu lỗi của AI lên tầm cỡ Production nhờ việc tự động vá lỗi bằng giải thuật kiểm tra chéo (Math Cross-check).
+- Tích hợp hoàn hảo thao tác xét duyệt thủ công (Human-in-the-loop) dựa theo phân luồng trạng thái từ điểm tin cậy.
+- Đạt tiêu chuẩn bảo mật cho cấu hình Backend không thể bị hack với AWS Secrets Manager.
 

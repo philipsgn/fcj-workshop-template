@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 4"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 4:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Tìm hiểu Docker và kho chứa image Amazon ECR.
+- Gắn nhãn hộp giới hạn (Bounding boxes) chuẩn xác cho mô hình OCR.
+- Áp dụng kỹ thuật gia tăng dữ liệu (Data Augmentation) để chống overfitting.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc |
+| --- | --- |
+| 2 | - Học container hóa với Docker, cách viết Dockerfile cho môi trường Python. <br> - Tìm hiểu dịch vụ lưu trữ image Amazon ECR. |
+| 3 | - Thiết lập công cụ gắn nhãn dữ liệu (như Label Studio) trên máy ảo EC2. <br> - Định nghĩa các trường cần trích xuất (Đơn vị bán, MST, Ngày, Tổng tiền). |
+| 4 | - Gắn nhãn thủ công cho hơn 200 hóa đơn Việt Nam nhằm tạo Ground Truth chuẩn. <br> - Xuất file cấu trúc bounding box ra định dạng JSON. |
+| 5 | - Viết script gia tăng dữ liệu (Augmentation): thêm bóng mờ, thay đổi độ sáng tối, cắt lề ngẫu nhiên. <br> - Đồng bộ nhanh tập dữ liệu ngược lên lưu trữ S3. |
+| 6 | - **Thực hành:** <br>&emsp; + Dựng Dockerfile mô phỏng môi trường huấn luyện mô hình học sâu <br>&emsp; + Xác thực và Push Docker image lên Amazon ECR. |
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Có kinh nghiệm thực chiến khởi tạo, lưu trữ và quản lý Docker image với Amazon ECR.
+- Tạo sinh thành công bộ dữ liệu gán nhãn mẫu chất lượng, vượt rào cản thiếu dữ liệu Machine Learning.
+- Viết quy trình làm giàu dữ liệu (Augmentation) phức tạp giúp tăng tính bền bỉ của AI.
 

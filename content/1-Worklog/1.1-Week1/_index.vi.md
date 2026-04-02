@@ -5,55 +5,26 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 1:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Khởi động dự án Invoice OCR: Hiểu rõ bài toán nhận diện hóa đơn và các khó khăn gặp phải.
+- Làm quen với nền tảng điện toán đám mây AWS nhằm ứng dụng vào việc tính toán, nghiên cứu AI.
+- Thiết lập môi trường và cấu hình các dịch vụ AWS đầu tiên (IAM, EC2).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                   |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | - Họp Kick-off dự án Invoice OCR. <br> - Phân tích yêu cầu bài toán OCR tiếng Việt (hóa đơn giá trị gia tăng, hóa đơn bán lẻ). <br> - Cài đặt môi trường làm việc cá nhân (Python, Git).    |
+| 3   | - Tìm hiểu kiến trúc nhận diện hóa đơn thông minh (Data Pipeline, Train, Deploy). <br> - Đánh giá các bộ mẫu hóa đơn hiện có trên thị trường. |
+| 4   | - Bắt đầu tiếp cận AWS: <br>&emsp; + Tạo dự án AWS <br>&emsp; + Cấu hình bảo mật IAM (User, Roles, Policies) thay vì dùng Root account <br>&emsp; + Cài đặt AWS CLI & cấu hình thông tin định danh |
+| 5   | - Tìm hiểu dịch vụ Compute lõi EC2: <br>&emsp; + Instance types phù hợp cho AI (so sánh Compute-optimized vs GPU). <br>&emsp; + Các khái niệm VPC cơ bản, Subnet, Security Groups để bảo vệ môi trường chạy model. | 
+| 6   | - **Thực hành:** <br>&emsp; + Khởi tạo 1 máy ảo EC2 chạy môi trường Ubuntu/Linux <br>&emsp; + Kết nối SSH vào máy ảo bằng SSH Key pair <br>&emsp; + Chuẩn bị môi trường cài đặt Pytorch, OpenCV và Jupyter Notebook trên EC2. |
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Nắm vững bài toán "Invoice Information Extraction" và luồng xử lý chung của quá trình phát triển AI.
+- Quản trị phân quyền cơ bản và bảo mật trên tài khoản đám mây (Account & IAM).
+- Biết cách thiết lập định danh và sử dụng giao diện dòng lệnh AWS CLI.
+- Hoàn thành khởi tạo máy chủ EC2 hoạt động như một môi trường "Sandbox" an toàn, cấu hình thư viện Pytorch, sẵn sàng cho việc chạy thử mô hình.
+- Nắm cách giới hạn cổng mạng với Security Group giúp bảo mật môi trường.
 

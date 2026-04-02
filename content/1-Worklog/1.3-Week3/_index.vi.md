@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 3"
 date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Hiểu về kiến trúc phi máy chủ (Serverless) qua AWS Lambda.
+- Xây dựng luồng tự động tiền xử lý ảnh hóa đơn.
+- Áp dụng OpenCV để cải thiện chất lượng ảnh (deskew, binarization).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc |
+| --- | --- |
+| 2 | - Tìm hiểu kiến trúc AWS Lambda (Serverless) và môi trường thực thi. <br> - Nghiên cứu cơ chế S3 Event Notifications để kích hoạt hàm tự động. |
+| 3 | - Nghiên cứu kỹ thuật xử lý ảnh với OpenCV. <br> - Viết module xoay thẳng ảnh (deskew) và khử nhiễu (noise reduction). |
+| 4 | - Viết thuật toán nhị phân hóa (binarization) làm rõ nét phần chữ trên hóa đơn than mờ. <br> - Chạy test Python script trên máy cá nhân/EC2. |
+| 5 | - Đóng gói thư viện OpenCV vào Lambda Layer để vượt rào cản dung lượng của Lambda. <br> - Triển khai code thuật toán lên AWS Lambda. |
+| 6 | - **Thực hành:** <br>&emsp; + Cấu hình S3 trigger kích hoạt Lambda mỗi khi có ảnh mới <br>&emsp; + Test toàn luồng: Upload ảnh -> Lambda xử lý tự động -> Lưu ảnh sạch sang bucket đích. |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Thành thạo cấu hình AWS Lambda, cách tạo thư viện Lambda Layers (OpenCV).
+- Xây dựng thành công kiến trúc event-driven tự động dựa trên S3 triggers.
+- Tạo ra module tiền xử lý ảnh giúp tăng đáng kể độ chính xác cho mô hình nhận diện sau này.
 

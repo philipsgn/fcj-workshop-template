@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 2:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Làm quen với Amazon S3 để lưu trữ tập dữ liệu hóa đơn lớn.
+- Đánh giá các mô hình OCR cơ sở (Amazon Textract và Tesseract).
+- Phân tích giới hạn của các công cụ OCR hiện tại đối với hóa đơn tiếng Việt.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc |
+| --- | --- |
+| 2 | - Tạo S3 bucket để phân loại và lưu trữ ảnh hóa đơn (raw/processed). <br> - Cấu hình IAM policy rẽ nhánh quyền truy cập S3 bucket. |
+| 3 | - Tìm hiểu và cài đặt Tesseract OCR trên môi trường EC2 để test thử OCR tiếng Việt. |
+| 4 | - Khám phá Amazon Textract thông qua thư viện Boto3 (Python SDK). <br> - Chạy thử hóa đơn mẫu và lấy kết quả text thô. |
+| 5 | - So sánh kết quả Tesseract vs Textract. <br> - Tổng hợp các lỗi nhận diện điển hình (chữ mờ, bảng phức tạp, con dấu đè lên chữ). |
+| 6 | - **Thực hành:** <br>&emsp; + Upload 100 hóa đơn mẫu lên S3 <br>&emsp; + Viết script tự tải ảnh từ S3, gọi Textract API và lưu kết quả JSON về máy. |
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Thiết lập thành công Amazon S3 bucket và phân quyền IAM hợp lý cho ứng dụng lập trình.
+- Có kinh nghiệm thực tế sử dụng Boto3 để tương tác với các dịch vụ AWS.
+- Hiểu rõ các yếu điểm của mô hình OCR truyền thống (Textract, Tesseract) khi xử lý hóa đơn tiếng Việt phức tạp.
 

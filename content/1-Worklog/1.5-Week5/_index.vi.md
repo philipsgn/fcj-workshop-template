@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 5"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 5:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Huấn luyện mô hình sinh cấu trúc (Layout-aware transformers: LayoutLM/Donut).
+- Sử dụng EC2 GPU / SageMaker để tối ưu hóa thời gian train AI.
+- Phân tích đánh giá độ hội tụ loss và tránh overfitting.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc |
+| --- | --- |
+| 2 | - Nghiên cứu lý thuyết mô hình học không gian (Layout-aware như LayoutLMv3, Donut). <br> - So sánh chi phí và hiệu năng giữa EC2 GPU vs Amazon SageMaker. |
+| 3 | - Triển khai 1 máy ảo hỗ trợ GPU (VD: g4dn.xlarge). <br> - Cài driver đồ họa và CUDA toolkit để PyTorch chạy được trên GPU. |
+| 4 | - Chuyển đổi dữ liệu đã gắn nhãn thành chuẩn PyTorch Dataloaders (xử lý Tokenization và chuẩn hóa tọa độ hộp). |
+| 5 | - Bắt đầu fine-tune mô hình LayoutLMv3 cho bài toán phân loại Entity trên Invoice. <br> - Quan sát biểu đồ loss và điều chỉnh Learning Rate. |
+| 6 | - **Thực hành:** <br>&emsp; + Tự động hóa việc backup model checkpoints liên tục lên S3 <br>&emsp; + Chạy suy luận (Inference) bằng trọng số mới train trên tập Test rời. |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Làm chủ việc điều phối máy chủ EC2 trang bị sức mạnh phần cứng GPU trên AWS.
+- Huấn luyện (Fine-tune) thành công mô hình học sâu Transformer thế hệ mới trên dữ liệu hóa đơn.
+- Học được cách backup file trọng số (weights file) lớn liên tục lên lưu trữ đám mây.
 
