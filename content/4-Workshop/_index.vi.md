@@ -33,7 +33,7 @@ Hệ thống được triển khai trên **2 Availability Zones** tại `ap-sout
 2. [Chuẩn bị](4.2-Prerequisite/)
 3. [Mạng & Bảo mật](4.3-Networking-Security/)
 4. [Lưu trữ, Xác thực & Cơ sở dữ liệu](4.4-Storage-Database/)
-4. [Container Registry & Compute](4.5-Compute-Backend/)
+5. [Container Registry & Compute](4.5-Compute-Backend/)
 6. [Frontend & CloudFront Proxy](4.6-Frontend-Proxy/)
 7. [CI/CD & Giám sát](4.7-CICD-Monitoring/)
 8. [Kiểm tra Tổng thể](4.8-Testing/)

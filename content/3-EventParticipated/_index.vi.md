@@ -1,9 +1,9 @@
 ---
 title: "Các events đã tham gia"
 date: 2024-01-01
-weight: 4
+weight: 3
 chapter: false
-pre: " <b> 4. </b> "
+pre: " <b> 3. </b> "
 ---
 
 Trong quá trình thực tập, em đã tham gia 2 sự kiện. Mỗi sự kiện đều là một trải nghiệm đáng nhớ với những kiến thức mới, thú vị và bổ ích, cùng với đó là những món quà và những khoảnh khắc rất tuyệt vời.

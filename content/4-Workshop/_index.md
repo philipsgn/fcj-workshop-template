@@ -33,7 +33,7 @@ The system is deployed across **2 Availability Zones** in `ap-southeast-1` (Sing
 2. [Prerequisites](4.2-Prerequisite/)
 3. [Networking & Security](4.3-Networking-Security/)
 4. [Storage, Auth & Database](4.4-Storage-Database/)
-4. [Container Registry & Compute](4.5-Compute-Backend/)
+5. [Container Registry & Compute](4.5-Compute-Backend/)
 6. [Frontend & CloudFront Proxy](4.6-Frontend-Proxy/)
 7. [CI/CD & Monitoring](4.7-CICD-Monitoring/)
 8. [End-to-End Testing](4.8-Testing/)

@@ -3,7 +3,7 @@ title: "Sự kiện 2"
 date: 2026-03-30
 weight: 2
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 3.2. </b> "
 ---
 # Báo cáo Sự kiện: Platform Engineering & GenAIOps
 

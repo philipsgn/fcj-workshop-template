@@ -3,7 +3,7 @@ title: "Event 1"
 date: 2026-03-30
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: " <b> 3.1. </b> "
 ---
 # Summary Report “AWS re:Invent Recap HCMC 2026”
 

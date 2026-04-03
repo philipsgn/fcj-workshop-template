@@ -1,9 +1,9 @@
 ---
 title: "Tự đánh giá"
 date: 2024-01-01
-weight: 6
+weight: 5
 chapter: false
-pre: " <b> 6. </b> "
+pre: " <b> 5. </b> "
 ---
 
 Trong suốt thời gian thực tập với dự án SmartInvoice Shield từ tháng 1/2026 đến tháng 4/2026, tôi đã có cơ hội học hỏi và áp dụng các công nghệ AI tiên tiến cùng dịch vụ AWS Cloud vào một hệ thống quản lý hóa đơn thực tế.

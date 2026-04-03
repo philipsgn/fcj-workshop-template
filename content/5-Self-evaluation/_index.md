@@ -1,9 +1,9 @@
 ---
 title: "Self-Assessment"
 date: 2024-01-01
-weight: 6
+weight: 5
 chapter: false
-pre: " <b> 6. </b> "
+pre: " <b> 5. </b> "
 ---
 
 During my internship with the SmartInvoice Shield project from January 2026 to April 2026, I had the opportunity to learn and apply industry-leading AI models and AWS Cloud services to a real-world invoice management solution.
