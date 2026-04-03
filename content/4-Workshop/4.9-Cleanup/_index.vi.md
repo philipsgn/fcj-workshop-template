@@ -13,6 +13,19 @@ Sau khi hoàn thành workshop, hãy xóa toàn bộ tài nguyên đã tạo đ�
 
 ---
 
+## Chi phí Ước tính nếu KHÔNG Dọn dẹp
+
+| Dịch vụ | Chi phí xấp xỉ/tháng |
+|---|---|
+| NAT Gateway | ~$35 |
+| RDS Multi-AZ | ~$28 |
+| ECS Fargate (2 tasks) | ~$20 |
+| ALB | ~$18 |
+| EC2 (2x t3.micro) | ~$15 |
+| **Tổng cộng** | **~$116/tháng** |
+
+---
+
 ## Thứ tự Dọn dẹp
 
 ### 1. AWS Amplify

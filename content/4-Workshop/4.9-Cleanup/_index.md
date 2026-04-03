@@ -13,6 +13,19 @@ After finishing the workshop, delete all created resources to avoid unnecessary 
 
 ---
 
+## Estimated Cost if NOT Cleaned Up
+
+| Service | Approx. Monthly Cost |
+|---|---|
+| NAT Gateway | ~$35 |
+| RDS Multi-AZ | ~$28 |
+| ECS Fargate (2 tasks) | ~$20 |
+| ALB | ~$18 |
+| EC2 (2x t3.micro) | ~$15 |
+| **Total** | **~$116/month** |
+
+---
+
 ## Cleanup Order
 
 ### 1. AWS Amplify

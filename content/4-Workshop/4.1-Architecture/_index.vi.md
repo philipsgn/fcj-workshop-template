@@ -40,17 +40,18 @@ pre: " <b> 4.1. </b> "
 | 15   | Triển khai Backend (Elastic Beanstalk)   | 20' |
 | 16   | Cấu hình HTTPS (CloudFront)              | 15' |
 | 17   | Triển khai Frontend (Amplify)            | 10' |
-| 18   | CI/CD (GitHub Actions)                   | 10' |
-| 19   | CloudWatch Monitoring                    | 15' |
-| 20   | Kiểm tra End-to-End                      | 15' |
+| 18   | Cấu hình Tên miền tùy chỉnh (Route 53)   | 10' |
+| 19   | CI/CD (GitHub Actions)                   | 10' |
+| 20   | CloudWatch Monitoring                    | 15' |
+| 21   | Kiểm tra End-to-End                      | 15' |
 
 ## Chi Phí Ước Tính (Monthly)
 
-| Dịch vụ                         | Cấu hình dự kiến     | Chi phí (USD/tháng) |
-| ------------------------------- | -------------------- | ------------------- |
-| EC2 (EBS) + ALB                 | 2x t3.micro          | ~$42                |
-| RDS PostgreSQL                  | db.t3.micro Multi-AZ | ~$40                |
-| ECS Fargate                     | 2 tasks (0.25 vCPU)  | ~$7                 |
-| NAT Gateway                     | Regional             | ~$86                |
-| CloudFront, S3, SQS & Cloud Map |                      | ~$5                 |
-| **TỔNG CỘNG**                   |                      | **~$180**           |
+| Dịch vụ        | Cấu hình dự kiến     | Chi phí (USD/tháng) |
+| -------------- | -------------------- | ------------------- |
+| EC2 (EBS)      | 2x t3.micro          | ~$15                |
+| RDS PostgreSQL | db.t3.micro Multi-AZ | ~$28                |
+| ECS Fargate    | 2 tasks (0.25 vCPU)  | ~$20                |
+| NAT Gateway    | 1 zone + data        | ~$35                |
+| ALB (Backend)  | 1 ALB                | ~$18                |
+| **TỔNG CỘNG**  |                      | **~$116**           |

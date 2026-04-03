@@ -40,17 +40,18 @@ pre: " <b> 4.1. </b> "
 | 15   | Deploy Backend (Elastic Beanstalk)   |
 | 16   | Configure HTTPS (CloudFront)         |
 | 17   | Deploy Frontend (Amplify)            |
-| 18   | CI/CD (GitHub Actions)               |
-| 19   | CloudWatch Monitoring                |
-| 20   | End-to-End Verification              |
+| 18   | Configure Custom Domain (Route 53)   |
+| 19   | CI/CD (GitHub Actions)               |
+| 20   | CloudWatch Monitoring                |
+| 21   | End-to-End Verification              |
 
 ## Estimated Monthly Costs
 
-| Service                         | Configuration        | Cost (USD/month) |
-| ------------------------------- | -------------------- | ---------------- |
-| EC2 (EBS) + ALB                 | 2x t3.micro          | ~$42             |
-| RDS PostgreSQL                  | db.t3.micro Multi-AZ | ~$40             |
-| ECS Fargate                     | 2 tasks (0.25 vCPU)  | ~$7              |
-| NAT Gateway                     | Regional             | ~$86             |
-| CloudFront, S3, SQS & Cloud Map |                      | ~$5              |
-| **TOTAL**                       |                      | **~$180**        |
+| Service        | Configuration        | Cost (USD/month) |
+| -------------- | -------------------- | ---------------- |
+| EC2 (EBS)      | 2x t3.micro          | ~$15             |
+| RDS PostgreSQL | db.t3.micro Multi-AZ | ~$28             |
+| ECS Fargate    | 2 tasks (0.25 vCPU)  | ~$20             |
+| NAT Gateway    | 1 zone + data        | ~$35             |
+| ALB (Backend)  | 1 ALB                | ~$18             |
+| **TOTAL**      |                      | **~$116**        |
