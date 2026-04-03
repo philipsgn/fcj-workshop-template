@@ -6,34 +6,42 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+During my internship with the SmartInvoice Shield project from January 2026 to April 2026, I had the opportunity to learn and apply industry-leading AI models and AWS Cloud services to a real-world invoice management solution.
+I was directly involved in researching, developing, and optimizing the core AI OCR pipeline, ensuring seamless integration with the system's Backend.
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+### Key Contributions & Technical Highlights
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+**1. Advanced AI Model Development & Integration**
+- Directly participated in designing the multi-tier AI OCR architecture, heavily utilizing the **Gemini API** for robust and highly dynamic invoice data extraction.
+- Trained and implemented **LayoutLMv3** for layout-aware document understanding, backing it up with a custom **PaddleOCR + VietOCR** pipeline to establish a high-accuracy, cost-effective baseline.
+- Engineered a rigorous **Rule Engine** at the post-processing layer to validate extracted data (e.g., cross-checking subtotals and parsed units) ensuring strict schema integrity.
+
+**2. Cloud Deployment (AWS) & Integration**
+- Taking on the role of AI Engineer, I directly tuned the AI models for containerized deployment, ensuring a frictionless integration with the Backend (.NET 9) running on AWS ECS Fargate Spot.
+- Worked closely with the Backend track to resolve asynchronous processing hurdles, ensuring the AI inference clusters could safely consume workloads queued on Amazon SQS.
+- Effectively monitored and managed AI inference costs by strategically balancing calls between the paid Gemini API and the on-premise LayoutLMv3.
+
+**3. System Optimization & Troubleshooting**
+- Successfully optimized and integrated the combined AI OCR pipeline into the larger ecosystem.
+- Resolved complex constraints regarding OCR latency and LLM Hallucinations by iteratively testing Prompt Engineering strategies.
+- Proactively proposed and built the **AI Fallback logic**: routing straightforward invoices through the localized OCR stack and dispatching overly unstructured or badly scanned invoices to Gemini, drastically enhancing reliability.
+
+### Self-Assessment
 
 To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| No. | Criteria | Evaluation | Comments |
+|---|---|---|---|
+| 1 | Professional Knowledge | ✅ Good | Mastered the deployment of advanced CV/NLP models (LayoutLMv3, PaddleOCR, Gemini API) and AI wrapper integrations on AWS. |
+| 2 | Learning Ability | ✅ Good | Rapidly acquired GenAI prompt techniques and conquered the hyperparameter tuning for layout-aware models treating complex Vietnamese templates. |
+| 3 | Proactiveness | ✅ Good | Actively proposed the Tiered AI Fallback logic to maximize accuracy while minimizing API operational costs. |
+| 4 | Discipline | ✅ Fair | Strictly adhered to the project schedule, synced seamlessly with backend deployments, and maintained detailed weekly worklogs. |
+| 5 | Communication | ✅ Fair | Clearly communicated AI architecture logic to non-tech peers and rapidly resolved JSON payload contracts with Backend developers. |
+| 6 | Teamwork | ✅ Good | Collaborated efficiently across Backend, Frontend, and Cloud tracks to ensure synchronized SmartInvoice Shield operations. |
+| 7 | Problem Solving | ✅ Good | Effectively mitigated logic bottlenecks in OCR latency, tamed LLM hallucinations, and constructed a fail-safe Rule Engine. |
+| 8 | Project Contribution | ✅ Good | Successfully delivered the high-precision core AI OCR engine, establishing the foundational intelligence of the entire project. |
 
 ### Needs Improvement
-
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+- Strengthen discipline in updating technical documentation and precision metrics immediately after every minor model configuration change.
+- Improve presentation skills for visualizing complex machine learning training workflows to make them easier to digest for business stakeholders.
+- Continue exploring advanced deep learning compilation (like ONNX runtime) to further optimize local inference speeds in the future.
