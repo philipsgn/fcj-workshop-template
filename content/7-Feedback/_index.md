@@ -6,42 +6,45 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud Journey program. This will help the FCJ team improve any shortcomings based on the following aspects:
-
 ### Overall Evaluation
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+**1. Working Environment**
+The FCJ workspace is incredibly dynamic, professional, and intellectually stimulating. The open-door policy ensures that mentors are always approachable, creating a psychologically safe environment where discussing complex logic like ML architectures or cloud bugs feels natural and encouraged.
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+**2. Support from Mentor / Team Admin**
+I deeply appreciate the mentorship here. Instead of spoon-feeding answers, my mentors guided me through the thought process of debugging AI pipelines and AWS integrations. The admins were equally supportive, ensuring smooth access to required learning resources and cloud environments.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+**3. Relevance of Work to Academic Major**
+The responsibilities perfectly bridged the gap between my academic theories and industry reality. Transitioning from studying simple Python scripts to deploying containerized AI solutions (OCR) to AWS ECS significantly accelerated my career trajectory as an AI Engineer.
 
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+**4. Company Culture & Team Spirit**
+The culture champions cross-functional collaboration. Whether I was working with Backend or Cloud tracks, there was a palpable sense of shared ownership and mutual respect that made tackling tight deadlines enjoyable.
 
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
-
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+**5. Internship Policies / Benefits**
+Beyond the flexible setup, the unparalleled access to tech events—like the AWS re:Invent Recap HCMC—was a massive perk that expanded my professional network and kept me updated on cutting-edge cloud trends.
 
 ---
 
 ### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+
+- **What did you find most satisfying during your internship?**
+Successfully deploying the core AI OCR model onto AWS Serverless infrastructure for the "SmartInvoice Shield" project. Seeing my model parse real-world data and integrate deeply with cloud services was incredibly rewarding.
+
+- **What do you think the company should improve for future interns?**
+It would be fantastic to incorporate more dedicated peer-review sessions or hackathon-style mini-events to encourage interns to experiment with newer GenAI tools together.
+
+- **If recommending to a friend, would you suggest they intern here? Why or why not?**
+Without a doubt. It’s an elite training ground for anyone serious about mastering the intersection of Machine Learning and Cloud Computing.
 
 ---
 
 ### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+
+- **Do you have any suggestions to improve the internship experience?**
+Setting up a shared knowledge base (like a Wiki) where interns from previous cohorts share their specific AWS or AI troubleshooting steps could save a lot of debugging time.
+
+- **Would you like to continue this program in the future?**
+Absolutely. I am eager to dive deeper into AWS ML services and advanced generative tech stacks.
+
+- **Any other comments (free sharing):**
+A huge thank you to the FCJ organizing team for crafting such a transformative internship program!
