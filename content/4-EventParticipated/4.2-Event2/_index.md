@@ -61,10 +61,10 @@ pre: " <b> 4.2. </b> "
 ### 7. Event Photos
 
 **Platform Engineering & GenAIOps Event**
-![Memories with speakers and the community](speakers_community.png)
+![Memories with speakers and the community](event2_1.jpg)
 
 **Attendee at Event**
-![Check-in at the event](checkin.png)
+![Check-in at the event](event2_2.jpg)
 
 ---
 *Summary: The event provided a clear technical blueprint for building reliable GenAI applications and gave valuable orientations for my software engineering career.*

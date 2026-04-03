@@ -57,14 +57,11 @@ pre: " <b> 4.1. </b> "
 
 ### 8. Một số hình ảnh tại sự kiện
 
-**Cập nhật các giải pháp công nghệ mới nhất**
-![Tech Solution Updates](tech_solution_updates.png)
+**AWS re:Invent Recap 2026**
+![AWS re:Invent Recap 2026](event1_1.jpg)
 
-**Kỷ niệm cùng cộng đồng AWS Việt Nam (1)**
-![AWS Community Memories 1](community1.png)
-
-**Kỷ niệm cùng cộng đồng AWS Việt Nam (2)**
-![AWS Community Memories 2](community2.png)
+**Kỷ niệm cùng cộng đồng AWS Việt Nam**
+![AWS Community Memories](event1_2.jpg)
 
 ---
 *Nhìn chung, sự kiện re:Invent Recap 2026 đã mang đến cho tôi một "tấm bản đồ" hoàn chỉnh để định hình chiến lược AI dài hạn cho dự án SmartInvoice Shield và con đường sự nghiệp cá nhân.*

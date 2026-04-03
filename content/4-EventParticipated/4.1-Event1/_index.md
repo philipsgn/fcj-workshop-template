@@ -57,14 +57,11 @@ Attending the event at the Bitexco office was a professional and inspiring exper
 
 ### 8. Event Photos
 
-**Latest tech solutions updates**
-![Tech Solution Updates](tech_solution_updates.png)
+**AWS re:Invent Recap 2026**
+![AWS re:Invent Recap 2026](event1_1.jpg)
 
 **Memories with AWS Vietnam Community**
-![AWS Community Memories 1](community1.png)
-
-**Memories with AWS Vietnam Community**
-![AWS Community Memories 2](community2.png)
+![AWS Community Memories](event1_2.jpg)
 
 ---
 *Overall, the re:Invent Recap 2026 event provided me with a clear “roadmap” to shape the AI direction for the SmartInvoice Shield project and my upcoming career path.*

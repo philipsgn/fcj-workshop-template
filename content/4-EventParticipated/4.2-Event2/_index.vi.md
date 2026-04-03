@@ -61,10 +61,10 @@ pre: " <b> 4.2. </b> "
 ### 7. Một số hình ảnh tại sự kiện
 
 **Platform Engineering & GenAIOps Event**
-![Memories with speakers and the community](speakers_community.png)
+![Memories with speakers and the community](event2_1.jpg)
 
 **Người tham dự sự kiện**
-![Check-in at the event](checkin.png)
+![Check-in at the event](event2_2.jpg)
 
 ---
 *Tổng kết: Sự kiện không chỉ nạp thêm bản thiết kế định tuyến công nghệ cho hệ thống GenAI mà còn giúp củng cố vững vàng la bàn sự nghiệp Software Engineering của mình.*
