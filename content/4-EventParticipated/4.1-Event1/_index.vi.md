@@ -1,125 +1,70 @@
 ---
-title: "Event 1"
-date: 2024-01-01
+title: "Sự kiện 1"
+date: 2026-03-30
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
+# Báo cáo Sự kiện “AWS re:Invent Recap HCMC 2026”
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### 1. Mục tiêu sự kiện
+- **Cập nhật công nghệ:** Nắm bắt những công bố mới nhất từ AWS re:Invent toàn cầu, đặc biệt là dòng mô hình Nova, Amazon Bedrock và hạ tầng MLOps.
+- **Tối ưu hóa giải pháp:** Khám phá việc triển khai Cơ sở dữ liệu Vector (Vector Databases) và Truy xuất Đa phương thức (Multimodal Retrieval) để giải quyết các bài toán dữ liệu phức tạp.
+- **Kết nối cộng đồng:** Trao đổi trực tiếp với các chuyên gia AWS về hiện đại hóa ứng dụng và hạ tầng điểm kết nối mạng (POP) DirectConnect mới tại Việt Nam.
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### 2. Diễn giả
+- **Prapti Gupta** - Chuyên gia & Diễn giả AWS (Dẫn dắt phiên thảo luận về Vector Database trên S3).
+- Các **Kiến trúc sư Giải pháp (Solutions Architects)** từ AWS Việt Nam.
 
-### Mục Đích Của Sự Kiện
+### 3. Những điểm nổi bật chính
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+**Nền tảng Phân tích và Dữ liệu Hiện đại**
+- **Keynote về ML/AI & Đổi mới:** Tầm nhìn chiến lược của AWS nhằm thúc đẩy đổi mới thông qua sức mạnh dữ liệu và Trí tuệ nhân tạo.
+- **Cơ sở dữ liệu Vector trên Amazon S3:** Phương thức tối ưu hóa chi phí và quy mô khi lưu trữ/quản lý vector trực tiếp trên S3 cho ứng dụng AI.
+- **Ngôn ngữ Truy vấn Tự nhiên trên OpenSearch:** Dùng ngôn ngữ tự nhiên để truy vấn dữ liệu, thu hẹp khoảng cách người dùng với hệ thống phức tạp.
 
-### Danh Sách Diễn Giả
+**Hệ sinh thái AI Tạo sinh và Hạ tầng MLOps**
+- **Nâng cấp ứng dụng GenAI:** Tận dụng tính năng tối tân từ họ mô hình Nova và Amazon Bedrock để thiết kế ứng dụng thông minh hơn.
+- **Quản lý Tài nguyên qua MCP:** Cơ chế tương tác và điều phối các dịch vụ AWS hiệu quả bằng Model Control Plane (MCP).
+- **Truy xuất Đa phương thức:** Bước đột phá của Bedrock Knowledge Bases, cho phép tìm kiếm và tổng hợp chéo nhiều loại dữ liệu (hình ảnh, văn bản, bảng biểu).
+- **Hạ tầng MLOps quy mô lớn:** Quy trình huấn luyện và triển khai mô hình học máy chuẩn xác trên nền tảng Amazon SageMaker AI.
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+### 4. Giá trị Đúc kết
 
-### Nội Dung Nổi Bật
+**Kiến thức chuyên môn**
+- **Luồng Kiến trúc (Architecture Flow):** Nắm rõ dòng chảy xử lý từ lưu trữ (S3), truy vấn (OpenSearch) đến môi trường huấn luyện/thực thi (SageMaker/Bedrock).
+- **Sức mạnh Đa phương thức (Multimodal):** Cách kết hợp các luồng thông tin để tối đa hóa độ chính xác của AI.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+**Tư duy Hệ thống**
+- Hiểu được rằng phát triển AI không chỉ viết code mô hình, mà là kiến tạo một hệ sinh thái hạ tầng đo lường (MLOps) để hệ thống dễ dàng mở rộng.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+### 5. Ứng dụng thực tiễn vào Công việc
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+**Dự án SmartInvoice Shield:**
+- Ứng dụng *Multimodal Retrieval* để xử lý hóa đơn đầu vào có độ nhiễu cao (ảnh chụp mờ, file cứng đóng dấu).
+- Kế hoạch thay thế/bổ trợ CSDL quan hệ bằng Vector Databases nhằm tăng tốc độ tìm kiếm văn bản liên kết.
+- Áp dụng các quy trình MLOps bài bản để quản trị phiên bản mô hình OCR thay vì chép tay thủ công.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+### 6. Trải nghiệm Sự kiện
+Được tham dự sự kiện tại tháp Bitexco là một trải nghiệm mở mang tầm mắt và cực kì chuyên nghiệp:
+- Lắng nghe trực tiếp những chia sẻ nhiệt huyết từ chuyên gia AWS về kiến trúc lưu trữ.
+- Cơ hội quý báu để kết nối (networking) với cộng đồng kỹ sư Cloud & AI tại Việt Nam.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+### 7. Bài học kinh nghiệm
+- Việc hiểu luồng tổng thể kiến trúc quan trọng hơn việc chỉ biết dùng lẻ tẻ từng dịch vụ.
+- Tối ưu chi phí ngay từ khâu thiết kế (như dùng S3 thay vì dịch vụ riêng đắt đỏ cho Vector DB) là yếu tố sống còn lúc đẩy lên quy mô lớn.
+- Networking không chỉ để làm quen, mà còn để cọ xát, "kiểm chứng" lại các suy luận logic kỹ thuật thông qua người đi trước.
 
-#### Domain-Driven Design (DDD)
+### 8. Một số hình ảnh tại sự kiện
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+**Cập nhật các giải pháp công nghệ mới nhất**
+![Tech Solution Updates](tech_solution_updates.png)
 
-#### Event-Driven Architecture
+**Kỷ niệm cùng cộng đồng AWS Việt Nam (1)**
+![AWS Community Memories 1](community1.png)
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+**Kỷ niệm cùng cộng đồng AWS Việt Nam (2)**
+![AWS Community Memories 2](community2.png)
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+---
+*Nhìn chung, sự kiện re:Invent Recap 2026 đã mang đến cho tôi một "tấm bản đồ" hoàn chỉnh để định hình chiến lược AI dài hạn cho dự án SmartInvoice Shield và con đường sự nghiệp cá nhân.*
